@@ -1,0 +1,193 @@
+@media (max-width: 1200px) {
+    .promo {
+        height: 900px;
+        width: 90%;
+        margin: 0 auto;
+        &_main { 
+            margin-top: 135px;
+        }
+        &_desc {
+            margin-top: 230px;
+        }
+    }
+    .stock_info {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1110px) {
+    header {
+        border-bottom: hidden;
+    }
+}
+@media (max-width: 991px) {
+    .promo {
+        &_main { 
+            margin-top: 100px;
+            &-advice {
+                margin-top: 50px;
+                font-size: 25px;
+            }
+        }
+    }
+    .stock_title {
+        padding: 120px 0;
+    }
+    // .footer_main {
+    //     margin: 100px auto 0;
+    // }
+    .footer_links {
+        padding-right: 20px;
+    }
+    .footer_links a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 852px) {
+    .price_kind-text {
+        font-size: 14px;
+    }
+    .stock {
+        margin-top: 130px;
+    }
+    .menu_list-block {
+        padding: 0px 0px;
+    }
+    .promo_desc {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        z-index: 1;
+		position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: -100%;
+		width: 50%;
+		height: 100vh;
+		padding: 20px 15px;
+		background-color: rgba(189, 189, 189, 0.8);
+		transition: 0.6s all;
+		&_active {
+			left: 0;
+        }
+		&_item {
+			padding-right: 0;
+			border: none;
+			margin: 10px 0;
+        }
+
+    }
+    
+    .hamburger {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 50px;
+		transform: translateY(-50%);
+		width: 26px;
+		height: 12px;
+        span {
+            display: block;
+            background-color: #000;
+            height: 2px;
+            width: 100%;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+		&_active {
+			span {
+				margin-bottom: -2px ;
+				&:nth-child(1) {
+					transform: translateY(3px) rotate(-45deg);
+
+                }
+				&:nth-child(2) {
+					display: none;
+
+                }
+				&:nth-child(3) {
+					transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+
+    }
+    .promo_main {
+        margin-top: 70px;
+    }
+    .promo {
+        &_main {
+            &-advice {
+                font-size: 20px;
+            }
+        }
+    }
+    .reasons_text {
+        font-size: 17px;
+    }
+    .subheader {
+        width: 20%;
+    }
+    .link {
+        font-size: 12px;
+        color: white;
+    }
+    .footer_links a {
+        font-size: 14px;
+    }
+    .footer_social-items {
+        width: 30px;
+    }
+    .menu_link {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .reasons_text {
+        font-size: 15px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+    .footer_social-items {
+        width: 20px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .promo {
+        &_main {
+            &-advice {
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .promo_main {
+        margin-top: 50px;
+    }
+    .reasons_block {
+        margin-top: 25px;
+        justify-content: space-around;
+    }
+    .price_kind-text {
+        font-size: 11px;
+    }
+    .price_kind-desc {
+        margin-left: 10px;
+    }
+    .stock_title {
+        padding: 100px 0;
+    }
+    .price_kind-name {
+        margin-top: 50px;
+    }
+}
